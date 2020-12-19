@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "740565931728",
+    "firebase_url": "https://carrecog-c72ef.firebaseio.com",
+    "project_id": "carrecog-c72ef",
+    "storage_bucket": "carrecog-c72ef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:740565931728:android:248ce19ec4bb94f39730d5",
+        "android_client_info": {
+          "package_name": "com.example.carrecognition"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "740565931728-5t1i50k38eqlu76lkevpko82c22sorpc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.carrecognition",
+            "certificate_hash": "b583c06ac2e87ba3b440b5e488a264f9a8820d1a"
+          }
+        },
+        {
+          "client_id": "740565931728-1pu38lnf2rieucqrrqkpkihiov8n1v9n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbDdxJIw6JVY4RXezEqY3sgrYcPhKOUVw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "740565931728-1pu38lnf2rieucqrrqkpkihiov8n1v9n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

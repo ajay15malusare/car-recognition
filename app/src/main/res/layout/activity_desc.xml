@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homeActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/selected_image"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <RelativeLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/ic_round">
+
+                    <ImageView
+                        android:id="@+id/back_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_arrow_left"/>
+                </RelativeLayout>
+            </FrameLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="220dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:id="@+id/itemOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/label1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:fontFamily="@font/georgiab"
+
+                            android:layout_marginRight="20dp"
+                            android:text="Santro"
+                            android:layout_centerVertical="true"
+                            android:textColor="#36373b"
+                            android:textSize="18sp" />
+
+                        <!--<ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/rating"
+                            android:src="@drawable/ic_rating" />-->
+
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="20dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/loc_img"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="10dp"
+                                android:layout_toLeftOf="@+id/loc_text"
+                                android:src="@drawable/ic_settings_black_24dp" />
+
+                            <TextView
+                                android:id="@+id/loc_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Engine:- 1.1 Epsilon Mpi (BS6)"
+                                android:textSize="15sp"
+                                android:textColor="#A3A3A3"
+                                android:layout_marginRight="20dp"
+                                android:layout_gravity="center" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="8dp">
+                            <ImageView
+                                android:id="@+id/time_img"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_group_black_24dp" />
+
+                            <TextView
+                                android:id="@+id/time_text"
+                                android:layout_width="121dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="20dp"
+                                android:text="No. of Seats:-5"
+                                android:textColor="#A3A3A3"
+                                android:textSize="15sp" />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="8dp">
+                            <ImageView
+                                android:id="@+id/time_img"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_network_check_black_24dp" />
+
+                            <TextView
+                                android:id="@+id/m_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Mileage:- 30.48 km/kg"
+                                android:textSize="15sp"
+                                android:textColor="#A3A3A3"
+                                android:layout_marginRight="20dp"
+                                android:layout_gravity="center" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="8dp">
+
+                            <ImageView
+                                android:id="@+id/phn_img"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_attach_money_black_24dp" />
+
+                            <TextView
+                                android:id="@+id/price_txt"
+                                android:layout_width="185dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="20dp"
+                                android:text="Price: Rs.4.57 - 6.2 Lakh"
+                                android:textColor="#A3A3A3"
+                                android:textSize="15sp" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#BDBDBD"
+                        android:layout_margin="15dp"></View>
+
+
+                    <TextView
+                        android:id="@+id/con_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="The new Hyundai Santro is priced in the range of Rs 3.9 lakh to Rs 5.65 lakh (ex-showroom pan-India). Its offered in five variants - D-lite, Era, Magna, Sportz and Asta - two fuel options and two gearbox options. The 5-speed AMT is only available with petrol engine and is limited to the Magna and Sportz variants. If you are eyeing the Santro but confused about which variant fits your budget and serves your requirement the best, this handy guide should help making a decision easier."
+                        android:textSize="14sp"
+                        android:ellipsize="end"
+                        android:textColor="#A3A3A3"
+
+                        android:lineSpacingExtra="5dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="20dp" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#BDBDBD"
+                        android:layout_margin="15dp"></View>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#BDBDBD"
+                        android:layout_margin="15dp"></View>
+                    <TextView
+                        android:id="@+id/categ_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="17dp"
+                        android:fontFamily="@font/georgiab"
+                        android:text="You May Like"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="20dp"
+                        android:textColor="#6a6b79"
+                        android:textSize="18sp" />
+
+
+                    </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
